@@ -1,76 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header class="cabeçalho">
-  
-<div class="caixa">
-        <h1><img src="logo.png" alt=""srcset=""></h1>
-  
- <nav> 
-    <ul>
-     <li><a href="https://anailii.github.io/Barbearia-AluraAnaili/">HOME</a></li>
-     <li><a href="">PRODUTOS</a></li>
-     <li><a href="">CONTATOS</a></li>
-     </ul>
-     </nav>  
-</div>
-
-</header>
-
-<main>
-
-    <ul class="produtos">
-       <li>
-
-          <h2>cabelo</h2>
-          <img src="cabelo.jpg" alt="">
-          <p class="descriçao">Na tesoura ou máquina, como o cliente 
-              preferir </p>
-          <p class="preço">R$25,00</p>
-
-    </li>
+.cabeçalho{background-color: gray;
+padding: 20px;}
 
 
-
-    
-    <li>
-    
-       <h2>barba</h2>
-       <img class="foto" src="barba.jpg" alt="">
-       <p class="descriçao"> Corte e desenho Profissional de barba</p>
-       <p class="preço"> R$18,00</p>
-    </li>
-
-    <li>
-        <h2>cabelo+barba</h2>
-        <img class="foto" src="cabelo+barba.jpg" alt="">
-        <p class="descriçao" >Pacote completo de cabelo e barba</p>
-        <p class="preço" >R$35,00</p>  
- </li>
-</ul>
+.caixa{position: relative;
+width: 940px;
+margin: 0 auto;}
 
 
-</main>
+nav{position: absolute;
+top: 110px;
+right: 0;}
 
 
-<footer>
-    <img src="logo-branco.png" alt="">
-    <p class="rodape">Copyrigth Barbearia Alura - 1A - 2023</p>
+nav li{display: inline;
+margin: 0 0 0 15px;}
+
+nav a {text-transform: uppercase;
+color: black;
+font-weight: bold;
+font-size: 22px;
+text-decoration: none ;}
+ 
+nav a:hover{
+color: powderblue;
+text-decoration: underline;
+}
+
+.produtos{ width: 940px;
+ margin: 0 auto;
+padding: 50px 0;}
+
+.produtos li {display: inline-block;
+text-align: center;
+width: 30%;
+vertical-align: top;
+margin: 0 1.5%;
+padding: 30px 20px;
+box-sizing: border-box;
+border: 2px solid black;
+border-radius: 10px;}
+
+.produtos li:hover{border-color: crimson;}
+.produtos li:active{border-color: darkorange;}
+.produtos li:hover h2 {
+      font-size: 40px;
+}
+
+.descriçao{font-size: 18px;}
+.cabeçalho{background-color: gray;
+    padding: 20px;}
+
+.caixa{position: relative;
+       width: 940px;
+       margin: 0 auto;}
+
+nav {position: absolute;
+     top: 110px;
+     right: 0;}
+
+nav li {display: inline;
+       margin: 0 0 0 15px;}
+
+nav a {text-transform: uppercase;
+       color: black;
+       font-size: 22px;
+       text-decoration: none;}
+        
+nav a:hover{
+color: powderblue;
+text-decoration: underline;
+}
+
+
+.produtos{ width: 940px;
+       margin: 0  auto;}
+
+.produtos li {display: inline-block;
+           text-align: center;
+           width: 25%;
+           vertical-align: top;
+           margin: 0 1.5%;
+           padding: 30px 20px;
+           box-sizing: border-box;
+           border: 2px solid black;
+           border-radius: 10px;}
+        
+.produtos li:hover{border-color: slateblue;}
+.produtos li:active{border-color: darkviolet;}
+.produtos li:hover h2 { 
+           font-size: 40px;
+}
 
 
 
-</footer>
+.descriçao{font-size: 18px;}
 
+.preço{font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;}
 
+    footer{text-align: center;
+    background-color: gray;}
 
-</body>
-</html>
+.rodape{color: white;}
+.preço{font-size: 22px;
+        font-weight: bold;
+        margin-top: 10px;}
 
+    footer{text-align: center;
+    background-color: gray;}
+
+.rodape{color:white;}
+
+.foto{width: 40%;}
